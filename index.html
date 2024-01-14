@@ -85,6 +85,10 @@
         container.className = "unity-mobile";
         canvas.className = "unity-mobile";
 
+        if (screen.orientation) {
+    screen.orientation.lock('landscape');
+}
+
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
